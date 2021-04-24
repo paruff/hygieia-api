@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.capitalone.dashboard</groupId>
     <artifactId>hygieia-api</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>com.capitalone.dashboard:api</name>
     <description>Hygieia Rest API Layer</description>
@@ -11,13 +11,12 @@
 
 
     <properties>
-        <guava.version>18.0</guava.version>
-        <application.version.number>4.0.0</application.version.number>
+        <application.version.number>4.0.0-SNAPSHOT</application.version.number>
         <mongo>3.9.1</mongo>
         <mongodb.version>3.9.1</mongodb.version>
         <spring.version>5.1.4.RELEASE</spring.version>
         <jackson.version>2.9.8</jackson.version>
-        <guava.version>16.0.1</guava.version>
+        <guava.version>[24.1.1,)</guava.version>
         <pmd.version>3.6</pmd.version>
         <jacoco.version>0.7.6.201602180812</jacoco.version>
         <joda-time.version>2.7</joda-time.version>
@@ -143,8 +142,8 @@
         <!-- Project Deps -->
         <dependency>
             <groupId>com.capitalone.dashboard</groupId>
-            <artifactId>core</artifactId>
-            <version>4.0.0-SNAPSHOT</version>
+            <artifactId>hygieia-common</artifactId>
+            <version>4.0.0</version>
         </dependency>
 
         <!-- Spring Libraries -->
@@ -266,7 +265,7 @@
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>1.9.3</version>
+            <version>[1.9.4,)</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -285,10 +284,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.capitalone.onequery</groupId>
-            <artifactId>onequery</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
+           <groupId>com.capitalone.dashboard</groupId>
+           <artifactId>hygieia-query</artifactId>
+           <version>1.0.0</version>
+         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
